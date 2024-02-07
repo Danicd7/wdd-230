@@ -1,0 +1,88 @@
+body {
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Lora', serif;
+}
+h1, h2, h3, h4, footer {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1em;
+    border-bottom: 1px solid #acacac;
+}
+h3 {
+    font-size: 1em;
+}
+header {
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+    background-color: #52BE80;
+    box-shadow: 2px 2px 2px 2px;
+}
+header h1 {
+    line-height: 3em;
+}
+main {
+	margin: 1rem auto;
+	box-shadow: 2px 2px 2px 2px;
+    border-radius: 6px;
+	padding: 1rem;
+	background-color: #52BE80;
+	display: flex;
+	flex-direction: column;
+}
+input, button {
+	padding: 0.5rem;
+}
+button {
+	margin: 0.5rem;
+	transition: all 0.1s ease-in-out;
+    border-radius: 6px;
+}
+button:hover {
+	transform: scale(1.1);
+	font-weight: 500;
+}
+.delete {
+	width: fit-content;
+}
+.input {
+	display: flex;
+	gap: 1rem;
+}
+#submit {
+	width: 10em;
+	align-self: center;
+}
+.list {
+	padding: 0.5rem;
+}
+ul {
+	margin: 1rem;
+	list-style: none;
+}
+li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #52BE80;
+    box-shadow: 2px 2px 2px 2px;
+    font-size: smaller;
+}
+#lastModified {
+    text-align: center;
+	font-size: smaller;
+    display: grid;
+}
