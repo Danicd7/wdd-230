@@ -45,7 +45,7 @@ function displayList(item) {
     });
   }
 
-  function setChapterList() {
+  function ChapterList() {
     localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray));
   }
 
