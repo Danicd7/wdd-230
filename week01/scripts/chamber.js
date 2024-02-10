@@ -67,3 +67,27 @@ function generateCalendar(year, month) {
 // Display current month's calendar
 const currentDate = new Date();
 generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+
+
+/*----------- storage --------------*/
+document.addEventListener("DOMContentLoaded", function() {
+    const sidebar = document.getElementById('sidebar');
+    const lastVisit = localStorage.getItem('lastVisit');
+
+    if (!lastVisit) {
+        sidebar.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        const today = new Date();
+        const diffTime = Math.abs(today - new Date(lastVisit));
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        if (diffDays === 1) {
+            sidebar.textContent = "You last visited 1 day ago.";
+        } else {
+            sidebar.textContent = `You last visited ${diffDays} days ago.`;
+        }
+    }
+
+    // Update last visit date in localStorage
+    localStorage.setItem('lastVisit', new Date());
+});
