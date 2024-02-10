@@ -192,8 +192,28 @@ footer {
     padding: 10px;
 }
 
+/*----------- DISCOVERY --------------*/
 
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
 
+.sidebar {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.content {
+    padding: 20px;
+}
 
 
 
