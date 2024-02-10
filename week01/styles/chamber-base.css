@@ -196,7 +196,7 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 350px 1fr;
     grid-gap: 20px;
     padding: 20px;
 }
@@ -213,9 +213,61 @@ footer {
 
 .content {
     padding: 20px;
+    align-items: center;
 }
 
+.gallery picture img {
+    display: block;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    animation: fade 15s;
+}
 
+.gallery img:hover {
+    transform: scale(1.1); 
+    opacity: 0.8;
+}
+
+.gallery picture span{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    color: white;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#spotlights {
+    padding: 20px;
+}
+
+#spotlights h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#spotlights p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#spotlights mark {
+    background-color: yellow;
+    padding: 2px 5px;
+    font-weight: bold;
+}
 
 
 
