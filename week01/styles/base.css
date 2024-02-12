@@ -14,11 +14,6 @@
 
 
 
-/*----------- MAIN --------------*/
-
-/*----------- FOOTER --------------*/
-
-
 
 body {
   margin: auto;
@@ -38,7 +33,6 @@ header {
   padding: 10px;
   grid-template-columns: 200px 1fr;
   align-items: center;
- 
   justify-content: center;
 }
 
@@ -55,6 +49,7 @@ nav {
   align-items: center;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  margin-top: 0;
 }
 
 nav ul { 
@@ -94,12 +89,7 @@ h1 {
   font-family: 'Roboto', sans-serif;
 }
 
-.card {
-background-color: #32528875;
-border-radius: 8px;
-padding: 20px;
-margin-top: 20px;
-}
+
 
 h2 {
   text-shadow: 0 0 15px #3c3c3cef;
@@ -125,10 +115,46 @@ header img {
   justify-content: center;
 }
 
-main section .card {
-  grid-template-columns: 1fr 1fr;
+/*----------- MAIN --------------*/
+main {
+  margin-top: 0;
+}
+
+.temple {
+  display: flex;
+  justify-content: space-around;
+}
+
+.temple img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+.card {
+  box-shadow: 0 0 15px #292929;
+  flex-basis: calc(30% - 10px);
+  margin: 20px;
+  background-color: #32528875;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
  }
 
+ .card:nth-child(1) {
+  flex-basis: calc(85% - 20px); 
+}
+
+
+/*----------- FOOTER --------------*/
 
 footer {
   border-bottom: 1px solid #1e1e1e;
@@ -137,6 +163,7 @@ footer {
   justify-content: center;
   line-height: 2.75em;
   font-family: 'Lora', serif;
+  background-color:#32528875;
 }
 
 #lastModified {
@@ -147,3 +174,4 @@ padding: 0;
   display: grid;
   color: rgba(0, 1, 21, 0.804);
 }
+
