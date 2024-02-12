@@ -13,8 +13,6 @@
 /*----------- NAVIGATION --------------*/
 
 
-
-
 body {
   margin: auto;
   font-size: 18px;
@@ -139,6 +137,10 @@ main {
   margin-top: 20px;
 }
 
+.cards:hover {
+  background-color: #32528875;
+}
+
 .card {
   box-shadow: 0 0 15px #292929;
   flex-basis: calc(30% - 10px);
@@ -149,6 +151,9 @@ main {
   margin-top: 20px;
  }
 
+ .card a:hover{
+    color: purple;
+ }
  .card:nth-child(1) {
   flex-basis: calc(85% - 20px); 
 }
