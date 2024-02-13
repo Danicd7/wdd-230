@@ -1,0 +1,99 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="!DOCTYPEX-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Caetano">
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Chamber of Commerce"> 
+    <meta property="og:type" content="website"> 
+    <meta property="og:images" content="https://unsplash.com/es/s/fotos/madrid"> 
+    <meta property="og:url" content="https://danicd7.github.io/wdd230/week01/chamber-site-plan.html"> 
+    <!-- End of Open Graph meta tags -->
+    <meta name="description" content="Chamber of commerce from Madrid, Spain">
+    <link rel="stylesheet" href="styles/chamber_large.css">
+    <link rel="stylesheet" href="styles/chamber-base.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="icon" href="favicon/favicon.madrid.ico">
+    <title>Chamber of Commerce | Madrid | Spain</title>
+</head>
+
+<body>
+    <header>
+        <div id="topHead">
+        <div id="logo">
+            <a href="">
+                <img src="images/Madridgo.webp" alt="logo: the name of the web with the stars from Madrid's flag">
+            </a>
+        </div>
+
+        <h1>
+            Madrid<br>Chamber of Commerce
+        </h1>
+
+            <div id="socialNetwork">
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter logo">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook logo">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <button id="hamburgerBtn"></button>
+            <ul id="primaryNav">
+                <li class="active"><a href="https://danicd7.github.io/wdd-230/week01/discovery.html">Discovery</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="https://danicd7.github.io/wdd-230/week01/join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Madrid's Chamber of Commerce</h1>
+        <p>Representing a city where the chamber operates.</p>
+    </header>
+    <main>
+        <div class="form">
+        <h1>Membership</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Aplicant Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required id="fname"></label>
+                <label class="top">Last Name*<input type="text" name="lname" required id="fname"></label>
+                <label class="top">Title or Position<input type="text" name="titlePosition" id="titlePosition" pattern="[A-Za-z -]{7,}"></label>
+                <label class="top">Email*<input type="email" name="email" required id="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone <input type="tel" name="Phone" required id="phone" placeholder="1235551234"></label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>business/organization's Information</legend>
+                <label class="top">business/organization's name<input type="text" required name="business" id="business"></label>
+                <div>membership level:</div>
+                <label class="sbs"><input type="radio" name="membership" value="NP">NP non profit organization</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership</label>
+                <label class="top">Description of your Organization/company</label>
+                <textarea type="text" name="description" id="description" cols="30" rows="10"></textarea>
+                <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+            <input type="submit" value="Let me in" class="submitBtn">
+        </form>
+    </div>
+    
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Madrid's Chamber of Commerce.:|:. Daniel C. C. Da Silvao .:|:. WDD230 .:|:. Madrid</p>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/hamgurgerBtn.js"></script>
+</body>
+
+</html>
