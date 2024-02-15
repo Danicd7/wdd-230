@@ -1,0 +1,55 @@
+{
+    "ward_members": [
+    {
+    "family_name": "Bento",
+    "move_in_date": "2023-05-12",
+    "family_size": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+    {
+    "name": "Carlos Bento",
+    "gender": "male",
+    "birthdate": "1980-03-15"
+    },
+    {
+    "name": "Maria Bento",
+    "gender": "female",
+    "birthdate": "1982-07-20"
+    },
+    {
+    "name": "Jose Luis Bento",
+    "gender": "male",
+    "birthdate": "2010-12-10"
+    },
+    {
+    "name": "Mafalda Bento",
+    "gender": "female",
+    "birthdate": "2015-09-25"
+    }
+    ]
+    },
+    {
+    "family_name": "Garcia",
+    "move_in_date": "2023-09-28",
+    "family_size": 3,
+    "visited_by_bishopric": false,
+    "family_members": [
+    {
+    "name": "David Garcia",
+    "gender": "male",
+    "birthdate": "1975-11-03"
+    },
+    {
+    "name": "Sariah Garcia",
+    "gender": "female",
+    "birthdate": "1978-08-18"
+    },
+    {
+    "name": "Daria Garcia",
+    "gender": "female",
+    "birthdate": "2010-05-22"
+    }
+    ]
+    }
+    ]
+    }
