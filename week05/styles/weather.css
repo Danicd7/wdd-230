@@ -1,0 +1,29 @@
+body {
+    margin: auto;
+    font-size: 16px;
+    font-family:'Lora', serif;
+}
+
+header, footer {
+    text-align: center;
+    margin: 1rem;
+    position: relative;
+    border-top: 2px solid #222222;
+    border-bottom: 2px solid #222222;
+    padding: 1em;
+  }
+
+body {
+    text-align: center;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Roboto', sans-serif;
+}
+
+
+h1 {
+    color: rgba(10, 10, 197, 0.597);
+    text-shadow: 0 0 15px #777;
+}
