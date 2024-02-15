@@ -1,0 +1,87 @@
+html {
+    background-color: rgba(106, 106, 238, 0.747);
+}
+body {
+    margin: auto;
+    font-size: 16px;
+    font-family:'Lora', serif;
+}
+
+header, footer {
+  text-align: center;
+  margin: 1rem;
+  position: relative;
+  border-top: 2px solid #222222;
+  border-bottom: 2px solid #222222;
+  padding: 1em;
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));   
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Roboto', sans-serif;
+}
+
+h1 {
+    color: rgba(10, 10, 197, 0.597);
+    text-shadow: 0 0 15px #777;
+}
+
+
+section {
+    padding: 1rem;
+    min-width: 340px;
+    margin: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(233, 205, 169)
+}
+
+section p {
+    margin: 0.5em;
+}
+section img {
+    border-radius: 10px;
+}
+
+nav {
+    padding: 10px;
+    background-color: #315d8b65;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+  }
+  
+  nav ul { 
+    list-style-type: none;
+    display: inline-flex;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  nav li {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  
+  nav a {
+    color: #292929;
+    padding: .5rem;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #f7f3f3;
+    background-color: #32528875;
+    transition: .5s;
+  }
+  
+  li .active {
+    background-color: red;
+  }
