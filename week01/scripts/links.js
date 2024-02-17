@@ -1,5 +1,5 @@
-const baseURL = "https://yourgithubusername.github.io/wdd230/";
-const linksURL = "https://yourgithubusername.github.io/wdd230/data/links.json";
+const baseURL = "https://danicd7.github.io/wdd-230";
+const linksURL = "https://danicd7.github.io/wdd-230/week01/data/links.json";
 const ulLink = document.querySelector("#links");
 
 async function getLinks(){
