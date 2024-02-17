@@ -151,6 +151,19 @@ main {
   margin-top: 20px;
  }
 
+ .card h2 {
+  margin: .3rem 0;
+ }
+
+ .card #description {
+  text-transform: capitalize;
+  margin: .3rem 0;
+ } 
+
+ .card #temperature {
+  font-size: 2rem;
+  margin: .3rem 0;
+ }
  .card a:hover{
     color: purple;
  }

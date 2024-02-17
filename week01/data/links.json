@@ -1,0 +1,94 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1", 
+        "links": [
+          {
+            "url":"https://danicd7.github.io/wdd-230/week01/media-query.html",
+            "title":"media-query"
+          },
+          {
+            "url":"https://danicd7.github.io/wdd-230/week01/holygrail.html",
+            "title":"holygrail"
+          },
+          {
+            "url": "https://danicd7.github.io/wdd230/week01/chamber-site-plan.html",
+            "title":"chamber-site-plan"
+          }
+        ]   
+      },
+      {
+        "week": "Week 2", 
+        "links": [
+          {
+            "url":"https://danicd7.github.io/wdd-230/week02/bom.html",
+            "title":"Dom Manipulation"
+          },
+          {
+            "url":"https://danicd7.github.io/wdd-230/week02/design.html",
+            "title":"Design principles and favicon"
+          }
+        ]   
+      },
+      {
+        "week": "Week 3", 
+        "links": [
+          {
+            "url":"week03/images/landscape.webp",
+            "title":"WebP"
+          },
+          {
+            "url":"https://danicd7.github.io/wdd-230/week03/lazyload.html",
+            "title":"lazyload"
+          },
+          {
+            "url": "https://danicd7.github.io/wdd-230/week03/responsive-images.html",
+            "title":"Responsive image"
+          }
+        ]   
+      },
+      {
+        "week": "Week 4", 
+        "links": [
+          {
+            "url":"https://codepen.io/Danicd7/pen/QWoJEjL",
+            "title":"Pseudo-Classes"
+          },
+          {
+            "url":"week04/images/combinator.png",
+            "title":"Combinators"
+          },
+          {
+            "url": "https://danicd7.github.io/wdd-230/week04/tablebuild.html",
+            "title":"Tablebuild"
+          },
+          {
+            "url": "https://danicd7.github.io/wdd-230/week04/index.html",
+            "title":"Html Form"
+          }
+        ]   
+      },
+      {
+        "week": "Week 5", 
+        "links": [
+          {
+            "url":"https://codepen.io/Danicd7/pen/XWGoLdm",
+            "title":"CSS Pseudo-elements"
+          },
+          {
+            "url":"https://danicd7.github.io/wdd-230/week05/new-ward-members.html",
+            "title":"JSON"
+          },
+          {
+            "url": "https://danicd7.github.io/wdd-230/week05/prophets.html",
+            "title":"The Fetch API"
+          },
+          {
+            "url": "https://danicd7.github.io/wdd-230/week05/weather.html",
+            "title":"Consuming a Weather API"
+          }
+        ]   
+      }
+
+    ] 
+    }
