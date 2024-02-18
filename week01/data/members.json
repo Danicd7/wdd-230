@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "Grupo Alava.",
+        "address": "789 Tech Street, Innovation City",
+        "phone": "915 679 700",
+        "website": "https://www.grupoalava.com/",
+        "image": "grupoalava_logo.jpg",
+        "membership_level": "Platinum",
+        "other_information": "Leading the technological innovation for 50 years in Spain."
+      },
+      {
+        "name": "Ferritor.",
+        "address": "Avda. Democracia, nº 7",
+        "phone": "917 633 379",
+        "website": "http://www.ferritor.com/",
+        "image": "ferritor.png",
+        "membership_level": "Gold",
+        "other_information": "Providing quality products."
+      },
+      {
+        "name": "Chemtex Manufacturing, Inc.",
+        "address": "C/ Orense, 16, 5°C",
+        "phone": "913 456 772",
+        "website": "https://www.chemtexglobal.com/",
+        "image": "chemtexglobal_logo.jpg",
+        "membership_level": "Silver",
+        "other_information": "American Liquid Packaging Systems."
+      },
+      {
+        "name": "Intercomet S.L.",
+        "address": "Calle Cañada 15",
+        "phone": "91 658 26 00",
+        "website": "https://www.intercomet.com/",
+        "image": "logo_intercomet.png",
+        "membership_level": "Gold",
+        "other_information": "Commission agent in sector of non-ferrous and ferrous metal semis.."
+      },
+      {
+        "name": "Flowserve Spain S.L.",
+        "address": "5215 North O’Connor Boulevard, Suite 700",
+        "phone": "916 604 600",
+        "website": "https://www.flowserve.com/en/",
+        "image": "Flowserve_logo.png",
+        "membership_level": "Bronze",
+        "other_information": "provide energy for transportation services."
+      },
+      {
+        "name": "Ruymor S.A.",
+        "address": "Avenida del Sol, 34. Pol. Industrial Las Monjas",
+        "phone": "91 675 17 54",
+        "website": "http://www.ruymor.com/index.html",
+        "image": "Ruymor.jpg",
+        "membership_level": "Silver",
+        "other_information": "provide metal materials."
+      },
+      {
+        "name": "Uncovercity",
+        "address": "Calle de Velazquez 45",
+        "phone": "667889222",
+        "website": "https://uncovercity.com/?utm_source=GMB&utm_medium=web&utm_campaign=GMB",
+        "image": "unconvercity.jpeg",
+        "membership_level": "Platinum",
+        "other_information": "Creating great grastronomic expiriences."
+      }
+    ]
+  }
