@@ -1,53 +1,65 @@
-const membersURL       = "./data/members.json";
-const memberGridEl     = document.getElementById("member-grid");
-const memberGridToggle = document.getElementById("member-grid-toggle");
+const url  = "https://danicd7.github.io/wdd-230/week01/data/members.json";
+const cards = document.querySelector("#member")
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
 
-async function fetchMembers() {
-  try {
-    const response = await fetch(membersURL);
 
-    if (!response.ok) {
-      throw new Error(await response.text());
-    }
 
-    const data = await response.json();
 
+async function getMemberData() {
+    try {
+    const response = await fetch(url); //fetch information
+    const data = await response.json(); // store information
+    // console.table(data.members); // check data response in console
     displayMembers(data.members);
-  } catch (error) {
-    console.log(error);
-  }
+} catch (error) {
+    console.error("Error fetching member data:", error);
+}
 }
 
 const displayMembers = (members) => {
-  let memberHTML = members.map(member => {
-    return `<div class="card member">
-              <div class="member-card-header">
-                <h3>${member.name}</h3>
-                <img src="./images/${member.image}" width="50" height="50">
-              </div>
-              <p>Address: ${member.address}</p>
-              <p>Phone: ${member.phone}</p>
-              <p>Membership level: ${member.membership_level}</p>
-              <p class="other-info">Other Info: ${member.other_information}</p>
-              <a href="https://google.com" target="_blank">Website</a>
-            </div>`
-  }).join("");
+    members.forEach((member) => {
+        let card = document.createElement("section");
+        let fullName = document.createElement("h2");
+        let address = document.createElement("p");
+        let membership = document.createElement("p");
+        let link = document.createElement("a")
+        let portrait = document.createElement("img");
 
-  memberGridEl.innerHTML = memberHTML;
-}
+        fullName.textContent = `${member.name}`; //pulls from the source and compiles
+        address.textContent = `${member.address}`;
+        membership.textContent = `${member.level}`;
+        link.textContent = ('website');
+        link.setAttribute('href', member.website);
 
-memberGridToggle.addEventListener("click", () => {
-  memberGridEl.classList.toggle("member-grid");
-  memberGridEl.classList.toggle("member-column");
+        //card.setAttribute('id', "card")
+        card.classList.add('card');
+        portrait.setAttribute('src', member.img);//pulls url from source
+        portrait.setAttribute('alt', 'image of '+ `${member.name}`);
+        portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('width', '340');
+        portrait.setAttribute('height', '440');
 
-  let members = document.getElementsByClassName("member");
+        //link.setAttribute('href', `${link}`)
 
-  Array.from(members).forEach(memberEl => {
-    memberEl.classList.toggle("card");
-    memberEl.classList.toggle("member-line-item");
-    memberEl.querySelector("img").classList.toggle("hidden");
-  });
-});
 
-// Main
-fetchMembers();
+        card.appendChild(fullName);
+        card.appendChild(address);
+        card.appendChild(membership);
+        card.appendChild(link);
+        card.appendChild(portrait);
+
+        cards.appendChild(card);
+        });
+    }
+
+    getMemberData(); //activate funtion
+
+    gridbutton.addEventListener("click", () => {
+        gridbutton.classList.toggle('active');
+        listbutton.classList.toggle('active');
+    });
+    listbutton.addEventListener("click", () => {
+        listbutton.classList.toggle('active');
+        gridbutton.classList.toggle('active');
+    });
