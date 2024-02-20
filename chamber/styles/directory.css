@@ -40,7 +40,8 @@
   
   .member-header button:hover {
     cursor: pointer;
-    background-color: hsl(206, 73%, 15%);
+    background-color: #3498db;
+    
   }
   
   .member-card-header {
@@ -55,5 +56,6 @@
     border-bottom: 1px solid #061826;
     border-top: 1px solid #061826;
     align-items: center;
-    padding: 1em;
+    padding: 1rem;
+
   }
