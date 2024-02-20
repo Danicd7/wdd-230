@@ -14,6 +14,7 @@
     <meta name="description" content="Chamber of commerce from Madrid, Spain">
     <link rel="stylesheet" href="styles/chamber_large.css">
     <link rel="stylesheet" href="styles/chamber-base.css">
+    <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,11 +59,15 @@
     </header>
     <main>
         <main>
-            <button id="grid" class="active">Grid</button>
-            <button id="list" class="">List</button>        
-            <div id="member">
-     
-             </div>
+            <section>
+                <div class="member-header">
+                    <div></div>
+                    <h1>Member Directory</h1>
+                    <button type="button" id="member-grid-toggle">Grid/list</button>
+                </div>
+                <div id="member-grid" class="member-grid"></div>
+            </section>
+                   
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> Madrid's Chamber of Commerce.:|:. Daniel C. C. Da Silvao .:|:. WDD230 .:|:. Madrid</p>
@@ -70,6 +75,8 @@
 
     <script src="scripts/chamber.js"></script>
     <script src="scripts/hamgurgerBtn.js"></script>
+    <script src="scripts/members.js"></script>
+
 </body>
 
 </html>

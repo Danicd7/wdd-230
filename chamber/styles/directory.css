@@ -1,0 +1,59 @@
+/* styles/member-cards.css */
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .member-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    column-gap: 1em;
+    padding: 1em;
+  }
+  
+  .member-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    column-gap: 1em;
+    margin: auto;
+    padding: 1em;
+  }
+  
+  .member-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1em;
+  }
+  
+  .member-header button {
+    border: none;
+    border-radius: 5px;
+    padding: 0 1em;
+    background-color: 1px solid #061826;
+    color: 1px solid #061826;
+    margin-left: auto;
+  }
+  
+  .member-header button:hover {
+    cursor: pointer;
+    background-color: hsl(206, 73%, 15%);
+  }
+  
+  .member-card-header {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    align-items: center;
+  }
+  
+  .member-line-item {
+    display: flex;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid #061826;
+    border-top: 1px solid #061826;
+    align-items: center;
+    padding: 1em;
+  }
